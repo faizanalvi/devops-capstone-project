@@ -4,9 +4,12 @@ SQLAlchemy==1.4.46
 
 # Build dependencies
 Flask==2.1.2
+Flask-Talisman==0.8.1
 Flask-SQLAlchemy==2.5.1
 psycopg2-binary==2.9.3
 python-dotenv==0.20.0
+Flask-CORS==3.0.10
+
 
 # Runtime dependencies
 gunicorn==20.1.0
@@ -28,5 +31,4 @@ coverage==6.3.2
 # Utilities
 httpie==3.2.1
 
-#Flask-Taslisman
-Flask-Talisman==0.8.1
+

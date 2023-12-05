@@ -12,6 +12,9 @@ COPY service/ ./service/
 RUN useradd --uid 1000 theia && chown -R theia /app
 USER theia
 
+# Set environment variable for deployment URL
+ENV DEPLOYMENT_URL=https://accounts-sn-labs-arifaizanfa.labs-prod-openshift-san-a45631dc5778dc6371c67d206ba9ae5c-0000.us-east.containers.appdomain.cloud/
+
 # Run the service
 EXPOSE 8080
 CMD ["gunicorn", "--bind=0.0.0.0:8080", "--log-level=info", "service:app"]
